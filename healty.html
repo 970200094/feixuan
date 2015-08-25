@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>健康指标_飞玄生物科技</title>
+<link rel="stylesheet" type="text/css" media="all" href="css/css.css"/>
+<style>
+.active{ left:10px !important; opacity:1 !important;}
+</style>
+
+<script>
+ window.onload =function(){
+	 var ocont=document.querySelector(".continer");
+	var obtnl=document.querySelectorAll(".h_left li");
+	var odiv=document.querySelectorAll(".rss");
+	var obtnr=document.querySelectorAll(".h_right li");
+	var odivr=document.querySelectorAll(".rss_r");
+	var ozt=document.querySelectorAll("#qx_l");
+	var oztr=document.querySelectorAll("#qx_r");
+	for(var i=0;i<odiv.length;i++){
+		odiv[i].style.opacity="1";
+	    odiv[i].style.left="0";
+		}
+		for(var i=0;i<odivr.length;i++){
+		odivr[i].style.opacity="1";
+	    odivr[i].style.right="0";
+		}
+	
+     ocont.style.opacity="1";
+	 ocont.style.transform="rotateY(0deg)";
+	 ocont.style.WebkitTransform="rotateY(0deg)";
+	 ocont.style.mstransform="rotateY(0deg)";
+	 ocont.style.MozTransform="rotateY(0deg)";
+	 
+	for(var i=0;i<obtnl.length;i++){
+	obtnl[i].index=i;
+	obtnl[i].onclick=function(){
+		
+		for(var i=0;i<obtnl.length;i++){
+			obtnl[i].style.WebkitTransform="scale(1.0)";
+			obtnl[i].className="";
+			odiv[i].className="";
+		     odiv[i].style.display="none"; 
+			   odiv[i].style.left="-200px"; 
+			 
+		}		
+     	
+		odiv[this.index].style.display="block";
+		odiv[this.index].style.left="0";
+		this.className="active";
+		this.style.WebkitTransform="scale(1.2)";
+		this.style.MozTransform="scale(1.2)";
+		this.style.msTransform="scale(1.2)";
+		this.style.transform="scale(1.2)";
+     	}
+	}
+	
+	for(var i=0;i<obtnr.length;i++){
+	obtnr[i].index=i;
+	obtnr[i].onclick=function(){
+		for(var i=0;i<obtnr.length;i++){
+			obtnr[i].style.WebkitTransform="scale(1.0)";
+			obtnr[i].className="";
+			odivr[i].className="";
+		     odivr[i].style.display="none"; 
+		}		
+		odivr[this.index].style.display="block";
+		this.className="active";
+		this.style.WebkitTransform="scale(1.3)";
+		this.style.MozTransform="scale(1.3)";
+		this.style.msTransform="scale(1.3)";
+		this.style.transform="scale(1.3)";
+     	}
+	}
+ }
+</script>
+<script type="text/javascript" src="jsjs.js"></script>
+</head>
+
+<body>
+<aside>
+    <div class="left" >
+         <div class="video health_l">
+    <h2>正太分布</h2>
+    <div class="rss" style="display:block;"><div class="quxian qx_l" id="qx_l">
+        <div class="android"><img src="images/quxian.png"  width="80%"/><br />
+
+        <span>3.9</span><span>5.5</span>
+        
+        </div>
+        <input name="" type="text" class="datah"/><input name="" type="button" value="确定" class="btn" />
+        <h3>空腹血糖FPG</h3>
+    </div></div>
+    <div class="rss"><div class="quxian qx_l" id="qx_l">
+        <div class="android"><img src="images/quxian.png"  width="80%"/>
+        <br />
+
+        <span>3.9</span><span>5.5</span>
+        </div>
+        <input name="" type="text" class="datah"/><input name="" type="button" value="确定" class="btn" />
+        <h3>血压</h3>
+    </div></div>
+    <address>Fibogio.com</address>
+    </div>
+    </div>
+</aside>
+<section>
+    <div class="continer">
+          <div class="health_con">
+          <h2>健康指标</h2>
+          <ul class="h_left">
+             <li><a><div class="icon_ar"><span>血糖</span></div></a></li>  
+             <li><a><div class="icon_ar"><span>血压</span></div></a></li>
+             </ul>
+             <ul class="h_right">
+             <li><a><div class="icon_ar"><span>血脂</span></div></a></li>
+             <li><a><div class="icon_ar"><span>体重指数</span></div></a></li>
+         </ul>
+         </div>
+    </div>
+    
+</section>
+<aside>
+    <div class="right" style="display:inline-block; width:25%">
+        <div class="down health_l">
+        <div class="back" style=""><a href="index.html"><img src="images/index.png" width="30" /></a></div>
+        <h2>正太分布</h2>
+        <div class="rss_r" style="display:block;"><div class="quxian qx_r" id="qx_r">
+        <img src="images/quxian.png"  width="80%"/>
+        <br />
+
+        <span>3.9</span><span>5.5</span>
+        <input name="" type="text" class="datah"/>
+        <input name="" type="button" value="确定" class="btn" />
+        <h3>总胆固醇TC</h3>
+    </div></div>
+         <div class="rss_r"><div class="quxian qx_r" id="qx_r">
+        <img src="images/quxian.png"  width="80%"/>
+        <br />
+
+        <span>3.9</span><span>5.5</span>
+        <input name="" type="text" class="datah"/>
+        <input name="" type="button" value="确定" class="btn" />
+        <h3>体重指数</h3>
+    </div></div>
+    <address>Fibogio.com</address>
+        </div>
+        
+    </div>
+</aside>
+<div class="clear"></div>
+
+</body>
+</html>
